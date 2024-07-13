@@ -1,0 +1,40 @@
+#welcome-message {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 999;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    animation-duration: 1000ms;
+    animation-iteration-count: 1;
+    animation-fill-mode: both;
+    animation-name: slideAnimation;
+    position: relative;
+    top: calc((50vh/2));
+    /* width: 22rem; */
+}
+
+
+
+@keyframes fadeOut {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes slideAnimation {
+    0% {
+        opacity: 0;
+        transform: translate(0, 100%);
+    }
+
+    100% {
+        opacity: 1;
+        transform: none;
+    }
+}
