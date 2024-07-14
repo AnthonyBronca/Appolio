@@ -1,0 +1,99 @@
+#home {
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    animation-duration: 1000ms;
+    animation-iteration-count: 1;
+    animation-fill-mode: both;
+    animation-name: slideAnimation;
+    width: 100%;
+    position: relative;
+    /* top: 2.5vh; */
+    height: 100vh;
+    background-color: rgba(15, 15, 15, 0.5);
+}
+
+.body-container{
+    position: absolute;
+    width: 90vw;
+}
+
+
+.nav-menu-div {
+    padding: 10px 0px 10px 0px;
+    cursor: pointer;
+    width: 3rem;
+    display: flex;
+    position: relative;
+    right: 3rem;
+}
+
+.menu-list-item {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+    padding: 2px 10px 2px 10px;
+    border-radius: 7px;
+}
+
+
+.active-menu-list-item {
+    display: flex;
+    background-color: rgb(50, 50, 50, .5);
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+    padding: 2px 10px 2px 10px;
+    border-radius: 7px;
+}
+
+.menu-list-item:hover {
+    background-color: rgb(50, 50, 50, .5);
+}
+
+
+.menu-icon {
+    height: 20px;
+    width: 20px;
+}
+
+.right-panel{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background-color: rgb(140, 140, 140, 0.1);
+    padding-top: 10px;
+    margin-top: 10px;
+    border-radius: 7px;
+    height: 50rem;
+}
+
+
+#body-item{
+    display: flex;
+    flex-direction: row;
+    gap: 5rem;
+}
+
+@keyframes fadeOut {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes slideAnimation {
+    0% {
+        opacity: 0;
+        transform: translate(0, 100%);
+    }
+
+    100% {
+        opacity: 1;
+        transform: none;
+    }
+}
